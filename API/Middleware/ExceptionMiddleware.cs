@@ -27,7 +27,6 @@ namespace API.Middleware
             try
             {
                 await _next(context);
-                console.log(context);
             }
             catch (Exception ex)
             {
