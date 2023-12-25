@@ -1,7 +1,7 @@
 name: docker-push
 
 on:
-    workflow_dispatch:
+  workflow_dispatch:
 #   push:
 #     branches:
 #       - 'main'
@@ -25,4 +25,4 @@ jobs:
         with:
           context: "{{defaultContext}}:API"
           push: true
-          tags: tomblair7254/datingapp:latest
+          tags: thomas7254/datingapp:latest
