@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for datingapp-main on 2023-12-25T12:24:06-05:00
+# fly.toml app configuration file generated for datingapp-main on 2023-12-27T16:48:30-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -6,18 +6,17 @@
 app = "datingapp-main"
 primary_region = "iad"
 
+[experimental]
+  auto_rollback = true
+
 [build]
   image = "thomas7254/datingapp:latest"
 
 [env]
-  ASPNETCORE_URLS="http://+8080"
-  CloudinarySettings__CloudName="dtm6vdbf7"
-  CloudinarySettings__ApiKey="474922549591869"
+  ASPNETCORE_URLS = "http://+:8080"
+  CloudinarySettings__ApiKey = "474922549591869"
+  CloudinarySettings__CloudName = "dtm6vdbf7"
 
-[experimental]
-  allowed_public_porst = []
-  auto_rollback = true
-  
 [http_service]
   internal_port = 8080
   force_https = true
