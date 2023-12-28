@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for datingapp-main on 2023-12-27T16:48:30-05:00
+# fly.toml app configuration file generated for datingapp-main on 2023-12-27T17:19:18-05:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -13,7 +13,7 @@ primary_region = "iad"
   image = "thomas7254/datingapp:latest"
 
 [env]
-  ASPNETCORE_URLS = "http://+:8080"
+  ASPNETCORE_URLS ="http://+:8080"
   CloudinarySettings__ApiKey = "474922549591869"
   CloudinarySettings__CloudName = "dtm6vdbf7"
 
